@@ -32,7 +32,7 @@ public class LeitorArquivoCSV {
 			
 			return new ConversorLinhasCSVEmInformacoes().converte(linhasLidas);
 		} catch (FileNotFoundException arquivoNaoEncontrado) {
-			throw new FileNotFoundException("Arquivo não encontrado.");
+			throw new FileNotFoundException("File not found.");
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
